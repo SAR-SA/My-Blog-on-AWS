@@ -2,9 +2,7 @@ import React from 'react';
 
 const AboutPage = () => (
     <React.Fragment>
-        <h1>
-            About Page
-        </h1>
+        <h1>About Page</h1>
         <p>
             Welcome to my Blog! orem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros,
             pulvinar facilisis justo mollis, auctor consequat urna. Morbi a bibendum metus.
