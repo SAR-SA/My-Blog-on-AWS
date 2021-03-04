@@ -1,9 +1,11 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import { MongoClient } from 'mongodb';
+import path from 'path';
 
 const app = express();
 
+app.use(express.static(path.join(__dirname, '/build')));
 app.use(bodyParser.json());
 
 const withDB = async (operations, res) => {
@@ -59,6 +61,11 @@ app.post('/api/articles/:name/add-comment', (req, res) => {
         res.status(200).json(updatedArticleInfo);
     }, res);
 });
+
+// All requests that are not caught by any of or api routes should be past on to our app
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname + '/build/index.html'));
+})
 
 // app.get('/hello', (req, res) => res.send('Hello! from get'));
 // app.get('/hello/:name', (req, res) => res.send(`Hello ${req.params.name}`))
