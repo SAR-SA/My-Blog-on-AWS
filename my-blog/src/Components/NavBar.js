@@ -1,9 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Navbar, Nav } from "react-bootstrap";
+import "../styles/NavBar.css"
+// import { Link } from 'react-router-dom';
 
-const NavBar = () => (
-    <nav>
-        <ul>
+const NavTop = () => (
+    <>
+        <Navbar bg="light" variant="light">
+            <Navbar.Brand id="name" >Shawn's Blog</Navbar.Brand>
+            <Nav className="mr-auto">
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/article-list">Articles</Nav.Link>
+            </Nav>
+        </Navbar>
+        {/* <ul>
             <li>
                 <Link to="/">Home</Link>
             </li>
@@ -13,8 +23,8 @@ const NavBar = () => (
             <li>
                 <Link to="/article-list">Articles</Link>
             </li>
-        </ul>
-    </nav>
+        </ul> */}
+    </>
 );
 
-export default NavBar;
+export default NavTop;

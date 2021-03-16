@@ -1,7 +1,10 @@
 import React from 'react';
+import { Container, Jumbotron } from 'react-bootstrap';
 
 const homePage = () => (
     <React.Fragment>
+     <Jumbotron>
+    <Container>
         <h1>
             Welcome to my Blog!
         </h1>
@@ -20,6 +23,8 @@ const homePage = () => (
             Cras pharetra mi tristique sapien vestibulum lobortis. Nam eget bibendum metus,
             non dictum mauris. Nulla at tellus sagittis, viverra est a, bibendum metus.
         </p>
+    </Container>
+    </Jumbotron>
     </React.Fragment>
 )
 
