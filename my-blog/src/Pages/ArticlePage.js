@@ -29,6 +29,7 @@ const ArticlePage = ({ match }) => {
     return (
         <React.Fragment>
             <h1>{article.title}</h1>
+            <h6>{article.date}</h6>
             <UpvotesSection articleName={name} upvotes={articleInfo.upvotes} setArticleInfo={setArticleInfo}/>
             {article.content.map((paragraph, key) => (
                 <p key={key}>{paragraph}</p>

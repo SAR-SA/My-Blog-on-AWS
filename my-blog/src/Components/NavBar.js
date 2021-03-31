@@ -13,17 +13,6 @@ const NavTop = () => (
                 <Nav.Link href="/article-list">Articles</Nav.Link>
             </Nav>
         </Navbar>
-        {/* <ul>
-            <li>
-                <Link to="/">Home</Link>
-            </li>
-            <li>
-                <Link to="/about">About</Link>
-            </li>
-            <li>
-                <Link to="/article-list">Articles</Link>
-            </li>
-        </ul> */}
     </>
 );
 

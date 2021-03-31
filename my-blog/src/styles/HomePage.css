@@ -1,0 +1,13 @@
+.banner {
+    
+}
+
+#avatar_pic {
+    width: 600px;
+    height: 500px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
